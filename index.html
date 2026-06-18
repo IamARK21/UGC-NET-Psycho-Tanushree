@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PsychoPrep – UGC-NET JRF Psychology Preparation Hub</title>
+  <meta name="description" content="Your ultimate preparation platform for UGC-NET JRF Psychology. Access the complete syllabus, exam blueprint, previous year questions, and full-length mock tests." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" onclick="showPage('home')">
+        <div class="logo-icon">Ψ</div>
+        <span>PsychoPrep</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" onclick="showPage('home')" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="#" onclick="showPage('syllabus')" class="nav-link" data-page="syllabus">Syllabus</a></li>
+        <li><a href="#" onclick="showPage('blueprint')" class="nav-link" data-page="blueprint">Blueprint</a></li>
+        <li><a href="#" onclick="showPage('papers')" class="nav-link" data-page="papers">PYQs</a></li>
+        <li><a href="#" onclick="showPage('test')" class="nav-link" data-page="test">Mock Test</a></li>
+        <li><a href="#" onclick="showPage('resources')" class="nav-link" data-page="resources">Resources</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGES WRAPPER ===== -->
+  <div id="app">
+
+    <!-- ========== HOME PAGE ========== -->
+    <div id="page-home" class="page active">
+      <section class="hero" id="home">
+        <div class="hero-bg">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            UGC-NET JRF 2024–25 Ready
+          </div>
+          <h1 class="hero-title">
+            Master <em>Psychology</em><br/>Crack the NET JRF
+          </h1>
+          <p class="hero-subtitle">
+            A comprehensive, research-backed preparation platform covering the complete UGC-NET Psychology syllabus with previous year questions, mock tests, and intelligent analytics.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary btn-lg" onclick="showPage('test')">
+              <span>Start Mock Test</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <button class="btn btn-ghost btn-lg" onclick="showPage('syllabus')">
+              View Syllabus
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num">500+</span>
+              <span class="stat-label">Practice Questions</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">10</span>
+              <span class="stat-label">Syllabus Units</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">2018–24</span>
+              <span class="stat-label">PYQ Coverage</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">300</span>
+              <span class="stat-label">Total Marks</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="brain-card">
+            <div class="brain-emoji">🧠</div>
+            <div class="brain-rings">
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+              <div class="ring ring-3"></div>
+            </div>
+            <div class="floating-badge fb-1">Cognitive Psychology</div>
+            <div class="floating-badge fb-2">Research Methods</div>
+            <div class="floating-badge fb-3">Social Psychology</div>
+            <div class="floating-badge fb-4">Psychometrics</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exam Overview -->
+      <section class="section exam-overview">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Exam Overview</div>
+            <h2 class="section-title">Know Your Exam</h2>
+            <p class="section-desc">Complete breakdown of UGC-NET JRF Psychology exam structure and requirements</p>
+          </div>
+          <div class="overview-grid">
+            <div class="overview-card paper1">
+              <div class="card-icon">📋</div>
+              <h3>Paper I</h3>
+              <div class="card-subtitle">General Aptitude</div>
+              <ul class="card-list">
+                <li><span class="tag">50</span> Questions</li>
+                <li><span class="tag">100</span> Marks</li>
+                <li><span class="tag">1 Hr</span> Duration</li>
+                <li><span class="tag">+2</span> Per correct answer</li>
+                <li><span class="tag">0</span> Negative marking</li>
+              </ul>
+              <div class="card-topics">
+                <span>Teaching Aptitude</span>
+                <span>Research Aptitude</span>
+                <span>Reading Comprehension</span>
+                <span>Reasoning</span>
+                <span>Data Interpretation</span>
+                <span>ICT</span>
+              </div>
+            </div>
+            <div class="overview-card paper2">
+              <div class="card-icon">🧪</div>
+              <h3>Paper II</h3>
+              <div class="card-subtitle">Psychology (Subject Code: 04)</div>
+              <ul class="card-list">
+                <li><span class="tag">100</span> Questions</li>
+                <li><span class="tag">200</span> Marks</li>
+                <li><span class="tag">2 Hrs</span> Duration</li>
+                <li><span class="tag">+2</span> Per correct answer</li>
+                <li><span class="tag">0</span> Negative marking</li>
+              </ul>
+              <div class="card-topics">
+                <span>10 Units</span>
+                <span>All MCQ</span>
+                <span>CBT Mode</span>
+                <span>English/Hindi</span>
+              </div>
+            </div>
+            <div class="overview-card cutoff">
+              <div class="card-icon">🎯</div>
+              <h3>JRF Cutoff</h3>
+              <div class="card-subtitle">Recent Trend (General Category)</div>
+              <div class="cutoff-table">
+                <div class="ct-row header"><span>Year</span><span>JRF</span><span>AP</span></div>
+                <div class="ct-row"><span>2025</span><span>234</span><span>206</span></div>
+                <div class="ct-row"><span>2024</span><span>232</span><span>204</span></div>
+                <div class="ct-row"><span>2023</span><span>228</span><span>200</span></div>
+                <div class="ct-row"><span>2022</span><span>224</span><span>198</span></div>
+              </div>
+              <p class="cutoff-note">*Out of 300 total marks. JRF = Junior Research Fellowship, AP = Assistant Professor</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section features">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Platform Features</div>
+            <h2 class="section-title">Everything You Need to Succeed</h2>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card" onclick="showPage('syllabus')">
+              <div class="feat-icon">📚</div>
+              <h3>Complete Syllabus</h3>
+              <p>All 10 units with detailed topic breakdowns, key concepts, and important theorists mapped to exam weight.</p>
+              <div class="feat-arrow">→</div>
+            </div>
+            <div class="feature-card" onclick="showPage('blueprint')">
+              <div class="feat-icon">📊</div>
+              <h3>Exam Blueprint</h3>
+              <p>Unit-wise question distribution analysis, topic weightage, and trend analysis from 2018–2024.</p>
+              <div class="feat-arrow">→</div>
+            </div>
+            <div class="feature-card" onclick="showPage('papers')">
+              <div class="feat-icon">📝</div>
+              <h3>Previous Year Papers</h3>
+              <p>Year-wise and paper-wise organized questions from 2018 to 2024 with detailed explanations.</p>
+              <div class="feat-arrow">→</div>
+            </div>
+            <div class="feature-card" onclick="showPage('test')">
+              <div class="feat-icon">⏱️</div>
+              <h3>Mock Tests</h3>
+              <p>Timed full-length tests, unit-wise practice sets, and adaptive quizzes with instant scoring.</p>
+              <div class="feat-arrow">→</div>
+            </div>
+            <div class="feature-card" onclick="showPage('resources')">
+              <div class="feat-icon">🔗</div>
+              <h3>Study Resources</h3>
+              <p>Curated books, online sources, YouTube channels, and strategy guides for JRF preparation.</p>
+              <div class="feat-arrow">→</div>
+            </div>
+            <div class="feature-card special">
+              <div class="feat-icon">📈</div>
+              <h3>Progress Tracker</h3>
+              <p>Track your test scores, identify weak areas, and monitor improvement across all topics.</p>
+              <div class="feat-arrow">→</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Units Preview -->
+      <section class="section units-preview">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Curriculum</div>
+            <h2 class="section-title">10 Units, Complete Coverage</h2>
+          </div>
+          <div class="units-grid">
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">01</span>
+              <span class="unit-name">Emergence of Psychology</span>
+              <span class="unit-weight">~8%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">02</span>
+              <span class="unit-name">Research Methodology & Statistics</span>
+              <span class="unit-weight">~15%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">03</span>
+              <span class="unit-name">Psychological Testing</span>
+              <span class="unit-weight">~10%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">04</span>
+              <span class="unit-name">Biological Basis of Behaviour</span>
+              <span class="unit-weight">~10%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">05</span>
+              <span class="unit-name">Attention, Perception, Learning & Memory</span>
+              <span class="unit-weight">~12%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">06</span>
+              <span class="unit-name">Thinking, Intelligence & Creativity</span>
+              <span class="unit-weight">~10%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">07</span>
+              <span class="unit-name">Personality, Motivation & Emotion</span>
+              <span class="unit-weight">~12%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">08</span>
+              <span class="unit-name">Social Psychology</span>
+              <span class="unit-weight">~10%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">09</span>
+              <span class="unit-name">Human Development & Interventions</span>
+              <span class="unit-weight">~8%</span>
+            </div>
+            <div class="unit-pill" onclick="showPage('syllabus')">
+              <span class="unit-num">10</span>
+              <span class="unit-name">Emerging Areas in Psychology</span>
+              <span class="unit-weight">~5%</span>
+            </div>
+          </div>
+          <div class="units-cta">
+            <button class="btn btn-primary" onclick="showPage('syllabus')">Explore Full Syllabus →</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========== SYLLABUS PAGE ========== -->
+    <div id="page-syllabus" class="page">
+      <div class="page-header">
+        <div class="container">
+          <div class="section-tag">Complete Curriculum</div>
+          <h1 class="page-title">UGC-NET Psychology Syllabus</h1>
+          <p class="page-desc">Official syllabus (Subject Code: 04) with all 10 units, key topics, important theorists, and exam tips.</p>
+        </div>
+      </div>
+      <div class="container syllabus-container">
+        <div class="syllabus-sidebar">
+          <div class="sidebar-title">Quick Navigation</div>
+          <ul class="sidebar-nav" id="syllabusNav">
+            <li><a href="#unit1" onclick="scrollToUnit('unit1')">Unit 1 – Emergence</a></li>
+            <li><a href="#unit2" onclick="scrollToUnit('unit2')">Unit 2 – Research & Stats</a></li>
+            <li><a href="#unit3" onclick="scrollToUnit('unit3')">Unit 3 – Psychological Testing</a></li>
+            <li><a href="#unit4" onclick="scrollToUnit('unit4')">Unit 4 – Biological Basis</a></li>
+            <li><a href="#unit5" onclick="scrollToUnit('unit5')">Unit 5 – Cognition & Learning</a></li>
+            <li><a href="#unit6" onclick="scrollToUnit('unit6')">Unit 6 – Intelligence & Creativity</a></li>
+            <li><a href="#unit7" onclick="scrollToUnit('unit7')">Unit 7 – Personality & Motivation</a></li>
+            <li><a href="#unit8" onclick="scrollToUnit('unit8')">Unit 8 – Social Psychology</a></li>
+            <li><a href="#unit9" onclick="scrollToUnit('unit9')">Unit 9 – Development & Intervention</a></li>
+            <li><a href="#unit10" onclick="scrollToUnit('unit10')">Unit 10 – Emerging Areas</a></li>
+          </ul>
+        </div>
+        <div class="syllabus-content" id="syllabusContent">
+          <!-- Units injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== BLUEPRINT PAGE ========== -->
+    <div id="page-blueprint" class="page">
+      <div class="page-header">
+        <div class="container">
+          <div class="section-tag">Exam Analysis</div>
+          <h1 class="page-title">Exam Blueprint & Topic Weightage</h1>
+          <p class="page-desc">Data-driven analysis of question distribution across units from 2018–2024. Focus your preparation strategically.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="blueprint-grid">
+          <div class="blueprint-main">
+            <div class="chart-card">
+              <h3>📊 Unit-Wise Question Distribution (Avg. per exam)</h3>
+              <div class="bar-chart" id="barChart"></div>
+            </div>
+            <div class="chart-card">
+              <h3>📈 Year-Wise Difficulty Trend</h3>
+              <div class="trend-chart" id="trendChart"></div>
+            </div>
+          </div>
+          <div class="blueprint-side">
+            <div class="priority-card">
+              <h3>🎯 Priority Units</h3>
+              <div class="priority-list" id="priorityList"></div>
+            </div>
+            <div class="tips-card">
+              <h3>💡 Blueprint Insights</h3>
+              <ul class="insights-list">
+                <li>Research Methodology questions appear in <strong>every exam</strong> with 12–18 questions</li>
+                <li>Personality theories (Unit 7) have consistently 8–12 questions</li>
+                <li>Biological Basis questions favor <strong>neuroanatomy</strong> and <strong>neurotransmitters</strong></li>
+                <li>Social Psychology favors <strong>social cognition</strong> and attitude studies</li>
+                <li>Emerging Areas (Unit 10) has <strong>increased</strong> from 3 to 6+ questions recently</li>
+                <li>Questions from Eastern psychological thought are <strong>1–3 per exam</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="topic-matrix">
+          <h3>🗂️ High-Frequency Topics Across Years</h3>
+          <div class="matrix-grid" id="topicMatrix"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== PYQs PAGE ========== -->
+    <div id="page-papers" class="page">
+      <div class="page-header">
+        <div class="container">
+          <div class="section-tag">Previous Year Questions</div>
+          <h1 class="page-title">Previous Year Papers (2018–2024)</h1>
+          <p class="page-desc">Year-wise and paper-wise organized UGC-NET Psychology questions with detailed explanations and answer keys.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="pyq-controls">
+          <div class="filter-group">
+            <label>Filter by Year:</label>
+            <select id="yearFilter" onchange="filterPYQ()">
+              <option value="all">All Years</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Filter by Paper:</label>
+            <select id="paperFilter" onchange="filterPYQ()">
+              <option value="all">All Papers</option>
+              <option value="1">Paper I (General Aptitude)</option>
+              <option value="2">Paper II (Psychology)</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Filter by Unit:</label>
+            <select id="unitFilter" onchange="filterPYQ()">
+              <option value="all">All Units</option>
+              <option value="1">Unit 1 – Emergence</option>
+              <option value="2">Unit 2 – Research & Stats</option>
+              <option value="3">Unit 3 – Psychological Testing</option>
+              <option value="4">Unit 4 – Biological Basis</option>
+              <option value="5">Unit 5 – Cognition & Learning</option>
+              <option value="6">Unit 6 – Intelligence & Creativity</option>
+              <option value="7">Unit 7 – Personality & Motivation</option>
+              <option value="8">Unit 8 – Social Psychology</option>
+              <option value="9">Unit 9 – Development & Intervention</option>
+              <option value="10">Unit 10 – Emerging Areas</option>
+            </select>
+          </div>
+          <div class="filter-group search-group">
+            <input type="text" id="pyqSearch" placeholder="🔍 Search questions..." oninput="filterPYQ()" />
+          </div>
+        </div>
+        <div class="pyq-stats-bar" id="pyqStatsBar"></div>
+        <div class="pyq-list" id="pyqList"></div>
+      </div>
+    </div>
+
+    <!-- ========== MOCK TEST PAGE ========== -->
+    <div id="page-test" class="page">
+      <div id="test-menu" class="test-menu">
+        <div class="page-header">
+          <div class="container">
+            <div class="section-tag">Mock Tests</div>
+            <h1 class="page-title">Practice Tests & Mock Exams</h1>
+            <p class="page-desc">Simulate real exam conditions with timed tests. Choose from full-length mock tests or focused unit-wise practice.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="test-options-grid">
+            <div class="test-option-card" onclick="startTest('full', 150, 180)">
+              <div class="test-icon">📋</div>
+              <h3>Full Mock Test</h3>
+              <p>Complete simulation with Paper I (50Q) + Paper II (100Q)</p>
+              <div class="test-meta">
+                <span>⏱️ 3 Hours</span>
+                <span>📝 150 Questions</span>
+                <span>🏆 300 Marks</span>
+              </div>
+              <button class="btn btn-primary">Start Test →</button>
+            </div>
+            <div class="test-option-card" onclick="startTest('paper2', 100, 120)">
+              <div class="test-icon">🧪</div>
+              <h3>Paper II Only</h3>
+              <p>Focus exclusively on Psychology (Paper II) questions</p>
+              <div class="test-meta">
+                <span>⏱️ 2 Hours</span>
+                <span>📝 100 Questions</span>
+                <span>🏆 200 Marks</span>
+              </div>
+              <button class="btn btn-primary">Start Test →</button>
+            </div>
+            <div class="test-option-card" onclick="startTest('paper1', 50, 60)">
+              <div class="test-icon">📊</div>
+              <h3>Paper I Only</h3>
+              <p>General aptitude, teaching & research methodology questions</p>
+              <div class="test-meta">
+                <span>⏱️ 1 Hour</span>
+                <span>📝 50 Questions</span>
+                <span>🏆 100 Marks</span>
+              </div>
+              <button class="btn btn-secondary">Start Test →</button>
+            </div>
+            <div class="test-option-card" onclick="openUnitTest()">
+              <div class="test-icon">🎯</div>
+              <h3>Unit-Wise Practice</h3>
+              <p>Focused 20-question practice sets for any specific unit</p>
+              <div class="test-meta">
+                <span>⏱️ 30 Min</span>
+                <span>📝 20 Questions</span>
+                <span>🏆 40 Marks</span>
+              </div>
+              <button class="btn btn-secondary">Choose Unit →</button>
+            </div>
+            <div class="test-option-card" onclick="startTest('pyq', 50, 60)">
+              <div class="test-icon">📜</div>
+              <h3>Previous Year Quiz</h3>
+              <p>Random selection of actual PYQ questions from 2018–2024</p>
+              <div class="test-meta">
+                <span>⏱️ 60 Min</span>
+                <span>📝 50 Questions</span>
+                <span>🏆 100 Marks</span>
+              </div>
+              <button class="btn btn-secondary">Start Test →</button>
+            </div>
+            <div class="test-option-card" onclick="startTest('rapid', 25, 20)">
+              <div class="test-icon">⚡</div>
+              <h3>Rapid Fire</h3>
+              <p>Quick 25-question sprint to sharpen recall and speed</p>
+              <div class="test-meta">
+                <span>⏱️ 20 Min</span>
+                <span>📝 25 Questions</span>
+                <span>🏆 50 Marks</span>
+              </div>
+              <button class="btn btn-secondary">Start Test →</button>
+            </div>
+          </div>
+          <div id="unitTestModal" class="modal hidden">
+            <div class="modal-box">
+              <h3>Select Unit for Practice</h3>
+              <div class="unit-select-grid" id="unitSelectGrid"></div>
+              <button class="btn btn-ghost" onclick="closeUnitModal()">Cancel</button>
+            </div>
+          </div>
+          <div class="score-history-section">
+            <h3>📈 Your Test History</h3>
+            <div id="scoreHistory" class="score-history-grid"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Test View -->
+      <div id="test-active" class="test-active hidden">
+        <div class="test-header-bar">
+          <div class="test-title-bar" id="testTitleBar">Mock Test</div>
+          <div class="test-timer" id="testTimer">⏱️ 03:00:00</div>
+          <button class="btn btn-danger" onclick="confirmSubmitTest()">Submit Test</button>
+        </div>
+        <div class="test-body">
+          <div class="test-sidebar">
+            <div class="question-palette-title">Question Palette</div>
+            <div class="palette-legend">
+              <span class="pl-dot answered"></span>Answered
+              <span class="pl-dot unanswered"></span>Unanswered
+              <span class="pl-dot current"></span>Current
+            </div>
+            <div class="question-palette" id="questionPalette"></div>
+          </div>
+          <div class="test-main">
+            <div class="question-nav-bar">
+              <span id="questionCounter">Question 1 of 100</span>
+            </div>
+            <div class="question-card" id="questionCard">
+              <div class="question-meta" id="questionMeta"></div>
+              <div class="question-text" id="questionText"></div>
+              <div class="options-list" id="optionsList"></div>
+              <div class="question-actions">
+                <button class="btn btn-ghost btn-sm" onclick="clearResponse()">Clear Response</button>
+                <div class="nav-btns">
+                  <button class="btn btn-secondary btn-sm" onclick="prevQuestion()">← Previous</button>
+                  <button class="btn btn-primary btn-sm" onclick="nextQuestion()">Next →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Test Result View -->
+      <div id="test-result" class="test-result hidden">
+        <div class="container">
+          <div class="result-card">
+            <div class="result-header">
+              <div class="result-icon" id="resultIcon">🎉</div>
+              <h2 id="resultTitle">Test Complete!</h2>
+              <p id="resultSubtitle">Here's your performance summary</p>
+            </div>
+            <div class="result-score-ring">
+              <svg viewBox="0 0 200 200" class="score-ring-svg">
+                <circle cx="100" cy="100" r="80" class="ring-bg"/>
+                <circle cx="100" cy="100" r="80" class="ring-fill" id="scoreRing"/>
+              </svg>
+              <div class="score-center">
+                <span class="score-pct" id="scorePct">0%</span>
+                <span class="score-label">Score</span>
+              </div>
+            </div>
+            <div class="result-stats">
+              <div class="rs-item correct"><span class="rs-num" id="rsCorrect">0</span><span>Correct</span></div>
+              <div class="rs-item wrong"><span class="rs-num" id="rsWrong">0</span><span>Wrong</span></div>
+              <div class="rs-item skipped"><span class="rs-num" id="rsSkipped">0</span><span>Skipped</span></div>
+              <div class="rs-item marks"><span class="rs-num" id="rsMarks">0</span><span>Marks</span></div>
+            </div>
+            <div class="result-unit-breakdown">
+              <h3>Unit-wise Performance</h3>
+              <div id="unitBreakdown" class="unit-breakdown-grid"></div>
+            </div>
+            <div class="result-actions">
+              <button class="btn btn-primary" onclick="reviewTest()">Review Answers</button>
+              <button class="btn btn-secondary" onclick="backToTestMenu()">New Test</button>
+            </div>
+          </div>
+          <div id="review-section" class="review-section hidden">
+            <h3>📝 Answer Review</h3>
+            <div id="reviewList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== RESOURCES PAGE ========== -->
+    <div id="page-resources" class="page">
+      <div class="page-header">
+        <div class="container">
+          <div class="section-tag">Study Resources</div>
+          <h1 class="page-title">Curated Study Resources</h1>
+          <p class="page-desc">Best books, online platforms, YouTube channels, and strategy tips for UGC-NET JRF Psychology preparation.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="resources-grid">
+          <div class="resource-section">
+            <h3>📚 Must-Have Books</h3>
+            <div class="book-list">
+              <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(135deg, #667eea, #764ba2)">Psy</div>
+                <div class="book-info">
+                  <h4>Psychology by Morgan, King, Weisz & Schopler</h4>
+                  <p>Complete foundational text covering all 10 units. Essential for concepts and theories.</p>
+                  <span class="priority-badge high">Must Read</span>
+                </div>
+              </div>
+              <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(135deg, #f093fb, #f5576c)">Stats</div>
+                <div class="book-info">
+                  <h4>Statistics in Psychology & Education – Garrett & Woodworth</h4>
+                  <p>The definitive guide for Unit 2 (Research & Statistics). Critical for every exam.</p>
+                  <span class="priority-badge high">Must Read</span>
+                </div>
+              </div>
+              <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(135deg, #4facfe, #00f2fe)">Test</div>
+                <div class="book-info">
+                  <h4>Psychological Testing – Anastasi & Urbina</h4>
+                  <p>Gold standard for Unit 3. Covers test construction, reliability, validity thoroughly.</p>
+                  <span class="priority-badge high">Must Read</span>
+                </div>
+              </div>
+              <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(135deg, #43e97b, #38f9d7)">Social</div>
+                <div class="book-info">
+                  <h4>Social Psychology – Baron, Byrne & Branscombe</h4>
+                  <p>Best for Unit 8. Modern social psychology with current research examples.</p>
+                  <span class="priority-badge medium">Recommended</span>
+                </div>
+              </div>
+              <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(135deg, #fa709a, #fee140)">Dev</div>
+                <div class="book-info">
+                  <h4>Human Development – Kail & Cavanaugh</h4>
+                  <p>Comprehensive lifespan development for Unit 9. Covers all major developmental theories.</p>
+                  <span class="priority-badge medium">Recommended</span>
+                </div>
+              </div>
+              <div class="book-card">
+                <div class="book-cover" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb)">UGC</div>
+                <div class="book-info">
+                  <h4>UGC-NET Psychology (Paper II) – Arihant / KVS Madaan</h4>
+                  <p>Exam-specific preparation book with PYQs, mock tests, and unit-wise theory.</p>
+                  <span class="priority-badge high">Must Read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resource-section">
+            <h3>🌐 Online Resources</h3>
+            <div class="online-resources">
+              <a href="https://ugcnet.nta.nic.in" target="_blank" class="resource-link official">
+                <div class="rl-icon">🏛️</div>
+                <div class="rl-info">
+                  <h4>Official NTA UGC-NET Website</h4>
+                  <p>Notifications, admit cards, results, and official answer keys</p>
+                </div>
+                <span class="rl-tag">Official</span>
+              </a>
+              <a href="https://examrace.com" target="_blank" class="resource-link">
+                <div class="rl-icon">📖</div>
+                <div class="rl-info">
+                  <h4>Examrace.com</h4>
+                  <p>Previous year papers, study material, and online tests for NET Psychology</p>
+                </div>
+                <span class="rl-tag">Free</span>
+              </a>
+              <a href="https://pw.live" target="_blank" class="resource-link">
+                <div class="rl-icon">🎓</div>
+                <div class="rl-info">
+                  <h4>Physics Wallah (PW)</h4>
+                  <p>Video lectures, downloadable PDFs, and practice sets for UGC-NET</p>
+                </div>
+                <span class="rl-tag">Freemium</span>
+              </a>
+              <a href="https://visionjrf.com" target="_blank" class="resource-link">
+                <div class="rl-icon">🔭</div>
+                <div class="rl-info">
+                  <h4>Vision JRF</h4>
+                  <p>Specialized JRF coaching materials, notes, and test series for Psychology</p>
+                </div>
+                <span class="rl-tag">Paid</span>
+              </a>
+              <a href="https://vedprep.com" target="_blank" class="resource-link">
+                <div class="rl-icon">📚</div>
+                <div class="rl-info">
+                  <h4>VedPrep</h4>
+                  <p>Organized PYQ archive with solutions for UGC-NET Psychology</p>
+                </div>
+                <span class="rl-tag">Free</span>
+              </a>
+              <a href="https://www.youtube.com/@ThePsychologyWorld" target="_blank" class="resource-link">
+                <div class="rl-icon">▶️</div>
+                <div class="rl-info">
+                  <h4>YouTube – NET Psychology Channels</h4>
+                  <p>Video explanations of complex topics and PYQ walkthroughs</p>
+                </div>
+                <span class="rl-tag">Free</span>
+              </a>
+            </div>
+          </div>
+          <div class="resource-section strategy-section">
+            <h3>🗺️ Preparation Strategy (6-Month Plan)</h3>
+            <div class="strategy-timeline">
+              <div class="phase">
+                <div class="phase-num">Phase 1</div>
+                <div class="phase-content">
+                  <h4>Month 1–2: Foundation Building</h4>
+                  <ul>
+                    <li>Complete Units 1, 4, 5 (historical, biological, and basic cognitive)</li>
+                    <li>Read Morgan & King for core concepts</li>
+                    <li>Make unit-wise summary notes</li>
+                    <li>Attempt 20 PYQs per unit after completion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="phase-num">Phase 2</div>
+                <div class="phase-content">
+                  <h4>Month 3–4: High-Weightage Units</h4>
+                  <ul>
+                    <li>Focus on Units 2, 3, 7 (high scoring areas)</li>
+                    <li>Master research designs and statistical tests</li>
+                    <li>Learn all major personality theories with theorists</li>
+                    <li>Take 1 unit-wise mock test weekly</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="phase-num">Phase 3</div>
+                <div class="phase-content">
+                  <h4>Month 5: Complete Coverage</h4>
+                  <ul>
+                    <li>Cover Units 6, 8, 9, 10</li>
+                    <li>Solve all PYQs from 2018–2024</li>
+                    <li>Identify and revisit weak areas</li>
+                    <li>Take 2 full mock tests per week</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="phase">
+                <div class="phase-num">Phase 4</div>
+                <div class="phase-content">
+                  <h4>Month 6: Revision & Mock Tests</h4>
+                  <ul>
+                    <li>Intensive revision of all summary notes</li>
+                    <li>Solve 1 full mock test daily (last 2 weeks)</li>
+                    <li>Focus on Paper I (teaching aptitude) practice</li>
+                    <li>Review answer sheets and improve accuracy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end #app -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="nav-logo"><div class="logo-icon">Ψ</div><span>PsychoPrep</span></div>
+          <p>Your complete UGC-NET JRF Psychology preparation companion.</p>
+        </div>
+        <div class="footer-links">
+          <div class="fl-col">
+            <h4>Prepare</h4>
+            <a href="#" onclick="showPage('syllabus')">Syllabus</a>
+            <a href="#" onclick="showPage('blueprint')">Blueprint</a>
+            <a href="#" onclick="showPage('papers')">PYQs</a>
+            <a href="#" onclick="showPage('test')">Mock Tests</a>
+          </div>
+          <div class="fl-col">
+            <h4>Official Links</h4>
+            <a href="https://ugcnet.nta.nic.in" target="_blank">NTA UGC-NET</a>
+            <a href="https://ugc.gov.in" target="_blank">UGC Website</a>
+            <a href="https://examrace.com" target="_blank">Examrace</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 PsychoPrep. Content sourced from official UGC/NTA materials. For educational purposes only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
